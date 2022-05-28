@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  background: var(--cream);
+  color: var(--medium-brown);
+}
+
+main {
+  min-width: 27.77rem;
+  max-width: 50rem;
+  margin-inline: auto;
+  margin-top: 10%;
+}
+
+/* Balance section */
+
+.balance-section {
+  border-radius: 0.55rem;
+  background-color: var(--soft-red);
+  color: var(--very-pale-orange);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.balance-amount {
+  font-size: 2rem;
+}
+
+.circles {
+  position: relative;
+}
+
+.white-circle-outline {
+  border: 2px solid white;
+  width: 2.77rem;
+  height: 2.77rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.38rem;
+}
+
+.dark-circle {
+  border: 2px solid var(--dark-brown);
+  background-color: var(--dark-brown);
+  width: 2.77rem;
+  height: 2.77rem;
+  border-radius: 50%;
+}
+
+/* End balance section */
+
+/* Spending section */
+.spending-section {
+  border-radius: 0.55rem;
+  background-color: var(--very-pale-orange);
+  padding: 1rem 3rem;
+}
+
+h1,
+h2,
+.percent {
+  color: var(--dark-brown);
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+.days {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 10rem;
+  position: relative;
+}
+
+.mon::before {
+  content: "";
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+.tue::before {
+  content: "";
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+.wed::before {
+  content: "";
+  padding: 4rem 1rem 1rem 1rem;
+  background-color: var(--cyan);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+.thu::before {
+  content: "";
+  padding: 1.5rem 1rem 1rem 1rem;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+.fri::before {
+  content: "";
+  padding: 1.3rem 1rem 1rem 1rem;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+.sat::before {
+  content: "";
+  padding: 3.5rem 1rem 1rem 1rem;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+.sun::before {
+  content: "";
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+.mon:hover::before,
+.tue:hover::before,
+.wed:hover::before,
+.thu:hover::before,
+.fri:hover::before,
+.sat:hover::before,
+.sun:hover::before {
+  opacity: 0.5;
+  transition-duration: 250ms;
+}
+
+.price-box-1 {
+  display: none;
+  padding: 0.3rem;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  color: var(--very-pale-orange);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  left: 3%;
+  bottom: 45%;
+}
+
+.price-box-2 {
+  display: none;
+  padding: 0.3rem;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  color: var(--very-pale-orange);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  left: 18%;
+  bottom: 55%;
+}
+
+.price-box-3 {
+  display: none;
+  padding: 0.3rem;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  color: var(--very-pale-orange);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  left: 32%;
+  bottom: 74%;
+}
+
+.price-box-4 {
+  display: none;
+  padding: 0.3rem;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  color: var(--very-pale-orange);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  left: 48%;
+  bottom: 50%;
+}
+
+.price-box-5 {
+  display: none;
+  padding: 0.3rem;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  color: var(--very-pale-orange);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  left: 62%;
+  bottom: 50%;
+}
+
+.price-box-6 {
+  display: none;
+  padding: 0.3rem;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  color: var(--very-pale-orange);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  left: 74%;
+  bottom: 68%;
+}
+
+.price-box-7 {
+  display: none;
+  padding: 0.3rem;
+  background-color: var(--dark-brown);
+  border-radius: 5px;
+  color: var(--very-pale-orange);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  left: 88%;
+  bottom: 55%;
+}
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.bottom-section {
+  position: relative;
+  padding: 1rem;
+}
+
+.last-month-comparison {
+  position: absolute;
+  right: 0;
+  top: 35%;
+  text-align: right;
+}
+
+.percent {
+  font-weight: 700;
+  display: block;
+}
+
+.prev-month {
+  font-size: 1.2rem;
+}
+
+/* End spending section */
